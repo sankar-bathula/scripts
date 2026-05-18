@@ -7,7 +7,7 @@ output_file = "D://Dev_GoogleAntigravity//scripts//Data//outputs//output_report.
 
 
 # Excel file path
-file_path = "D://Dev_GoogleAntigravity//scripts//Data//inputs//CashForecast 11-MAY-2026.xlsx"
+file_path = "D://Dev_GoogleAntigravity//scripts//Data//inputs//output.xlsx"
 
 # Load workbook and sheet
 book = load_workbook(file_path)
@@ -26,12 +26,7 @@ book.save(file_path)
 
 print("Date written successfully in AC1")
 
-# # Select required columns
-# selected_columns = [
-#     "Invoice Reference",
-#     "Amount in Local Currency",
-#     "Delivery date"
-# ]
+
 
 # df_selected = df[selected_columns]
 
