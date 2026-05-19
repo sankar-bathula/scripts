@@ -37,6 +37,12 @@ df = pd.read_excel(file_path, sheet_name="Sap Extract")
 
 # Copy and paste as values into new Excel file
 df.to_excel(output_file, sheet_name="Sap Extract", index=False)
+df = pd.read_excel(file_path, sheet_name="Sap Extract")
+#Hide columns in excel
+columns_to_hide = ['AF', 'AG', 'AH','AI']
+
+for col in columns_to_hide:
+    sheet.column_dimensions[col].hidden = True
 
 print("Entire sheet copied as values successfully.")
 
